@@ -1,0 +1,3 @@
+include ':linerotbreakview'
+include ':app'
+rootProject.name = "LinkedLineRotBreakBallView"
