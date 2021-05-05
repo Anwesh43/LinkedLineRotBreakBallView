@@ -208,4 +208,13 @@ class LineRotBreakBallView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+
+        fun create(activity : Activity) : LineRotBreakBallView {
+            val view : LineRotBreakBallView = LineRotBreakBallView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 }
