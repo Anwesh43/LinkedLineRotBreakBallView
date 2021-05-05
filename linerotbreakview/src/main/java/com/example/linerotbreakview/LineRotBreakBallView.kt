@@ -37,14 +37,14 @@ fun Canvas.drawLineRotBreakBall(scale : Float, w : Float, h : Float, paint : Pai
     val sf2 : Float = sf.divideScale(1, parts)
     val sf3 : Float = sf.divideScale(2, parts)
     save()
-    translate(w / 2, h / 2)
+    translate(w / 2, h)
     for (j in 0..1) {
         save()
         rotate(rot * (1f - 2 * j) * sf2)
         drawLine(0f, 0f, 0f, -size * sf1, paint)
         restore()
     }
-    drawCircle(0f, h /2 + size / 10 - (h) * sf3, size * 0.1f * sf3, paint)
+    drawCircle(0f, size / 10 - (h) * sf3, size * 0.1f, paint)
     restore()
 }
 
